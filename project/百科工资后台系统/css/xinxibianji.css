@@ -1,0 +1,26 @@
+.xinxib-top{
+    width: 140px;
+    height: 140px;
+    margin: 30px auto ;
+    background: url("../image/(Path) + (Path) + (Path).png");
+}
+.xinxib-conent{
+    width: 320px;
+    margin: 0 auto;
+    border-bottom: 1px solid #6f6f6f;
+}
+.xinxib-conent div{
+    font-size: 14px;
+    font-family: '微软雅黑';
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+.xinxib-conent button{
+    float: right;
+    color: #5f6062;
+}
+.xinxib-btn{
+    display: block;
+    margin: 50px auto;
+    color: #5f6062;
+}

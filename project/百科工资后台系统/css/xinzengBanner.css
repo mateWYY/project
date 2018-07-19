@@ -1,0 +1,33 @@
+/*新增banner特有样式*/
+.shouye-xinzeng{
+    box-sizing: border-box;
+    padding: 16px;
+}
+.xinzeng-box{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+}
+.xinzeng-top{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 0 14px;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #c14a48;
+    line-height: 30px;
+    font-family: '微软雅黑';
+    font-weight: bold;
+}
+.xinzeng-cont{
+    display: block;
+    margin-top: 20px;
+    padding-left: 14px;
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+}

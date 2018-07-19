@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运动1</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="nav">
+		<div class="header">
+			<div class="log">
+				<img src="images/logo.png" alt="">
+			</div>
+			<ul>
+				<li class="hei"><a href="index.html">HOME</a></li>
+				<li><a href="index2.html">ABOUTUS</a></li>
+				<li><a href="">MAN</a></li>
+				<li><a href=""> WOMAN</a></li>
+				<li><a href="">KID</a></li>
+				<li><a href="">FOLLOW US</a></li>
+			</ul>
+			<div class="elsh" onclick="btn()">
+				ENGLISH
+				<img src="images/esh_icn.png" alt="">
+				<div class="elsh_none">
+					<p>ENGLISH</p>
+					<p>中文</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+	    <div class="inner">
+	        <img src="images/banner_0.jpg" alt="">
+	        <img src="images/banner_1.jpg" alt="">
+	        <img src="images/banner_2.jpg" alt="">
+	        <img src="images/banner_3.jpg" alt="">
+	    </div>
+	    <button class="left">上一页</button>
+		<button class="right">下一页</button>
+		<div class="line"></div>
+	</div>
+	<div class="yundong_banner">
+		<img src="images/yundong_banner.jpg" alt="">
+	</div>
+	<div class="yundong_lo">
+		<div class="yundong_logo">
+			<img src="images/yuan.png" alt="">
+			<img src="images/yuan.png" alt="">
+			<img src="images/yuan.png" alt="">
+			<img src="images/yuan.png" alt="">
+			<img src="images/yuan.png" alt="">
+		</div>
+	</div>
+	<div class="shitu">
+		<div class="shitu_top">
+			<span>HOME</span>
+			<span>ABOUT US</span>
+			<span>MAN</span>
+			<span>WOMAN</span>
+			<span>KID</span>
+			<span>FOLLOW US</span>
+		</div>
+		<div class="shitu_cont">
+			<div class="shitu_one">
+				
+			</div>
+			<div class="shitu_nei">
+				<p>company culture</p>
+				<p>Corporate development</p>
+				<p>brand introduction</p>
+			</div>
+			<div class="shitu_nei">
+				<p>running shoes</p>
+				<p>Basketball shoes</p>
+				<p>Sports fashion shoes</p>
+				<p>Training shoes</p>
+				<p>badminton shoes</p>
+				<p>soccer shoes</p>
+				<p>outdoor shoes</p>
+				<p>slippers</p>
+			</div>
+			<div class="shitu_nei">
+				<p>Running shoes</p>
+				<p>Basketball shoes</p>
+				<p>Sports fashion shoes</p>
+				<p>Training shoes</p>
+				<p>Badminton shoes</p>
+				<p>Outdoor shoes</p>
+				<p>Slippers</p>
+			</div>
+			<div class="shitu_nei">
+				<p>KIDS (3-6 years old)</p>
+				<p>sports shoes</p>
+				<p>&nbsp;</p>
+				<p>YOUNG (7-12 years old)</p>
+				<p>running shoes</p>
+				<p>Training shoes</p>
+				<p>Casual shoes</p>
+				<p>Slippers</p>
+			</div>
+			<div class="shitu_nei">
+				<p>LINING</p>
+				<p>BASKETBALL</p>
+				<p>RUNING</p>
+				<p>TRAINING</p>
+				<p>SPORT LIFE</p>
+			</div>
+		</div>
+	</div>
+	<div class="foot_box">
+		<div class="footer">
+			<div class="f_1">
+				<h3>Follow Us</h3>
+				<img src="images/T.png" alt="">
+			</div>
+			<div class="f_2">
+				<img src="images/fangda.jpg" alt="">
+			</div>
+			<div class="f_3">
+				<h2>Contact Us</h2>
+				<p>Address</p>
+				<p>New Street</p>
+				<p>ph :400-610-0011</p>
+			</div>
+		</div>
+		<div class="banhao">
+			My Lining© 2018 Allright Reserved
+		</div>
+	</div>
+</body>
+
+<script>
+    function Subclass() {
+        Superclass.call(this);
+        this.sliding=function (br) {
+            if(br){
+                this.box.children[0].style.marginLeft=(-100*this.indexs+"%");
+            }
+        };
+        this.opacity=function (br) {
+            this.style();
+            if(br){
+                this.box.children[0].children[this.indexs].style.opacity=1;
+            }else {
+                Array.prototype.slice.call(this.box.children[0].children).
+                forEach(function (e) {
+                    e.style.opacity='';
+                },false)
+            }
+        };
+        this.style=function () {
+            this.box.children[0].style.width=0;
+            this.box.style.position='relative';
+            Array.prototype.slice.call(this.box.children[0].children).forEach(function (e) {
+                e.style.position='absolute';
+                e.style.left=0;
+                e.style.top=0;
+                e.style.opacity='0';
+            },false);
+            this.box.children[0].children[0].style.opacity=1;
+        }
+    }
+    Subclass.prototype=Object.create(Superclass.prototype);
+    var s=new Subclass();
+    var box=document.getElementsByClassName('box')[0];
+    var right=document.getElementsByClassName('right')[0];
+    var left=document.getElementsByClassName('left')[0];
+    var line=document.getElementsByClassName('line')[0];
+    var type=1;
+    s.initial(box,left,right,type,line);
+    s.lines();
+    s.reds();
+    s.Listener();
+    s.setanimval();
+    var none=document.getElementsByClassName("elsh_none")[0];
+    function btn(){
+    	if(none.style.display=="block"){
+    		none.style.display="none";    	
+    	}else{
+    		none.style.display="block";
+    	}
+    }
+</script>
+</html>

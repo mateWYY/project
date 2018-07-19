@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>已放款</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <script async src="js/flatpickr.js" onload="fp_ready()"></script>
+    <link rel="stylesheet" id=cal_style type="text/css" href="css/flatpickr.min.css">
+</head>
+<body>
+<script>
+    let data= [
+        {
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        },{
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "type": "1"
+        }
+    ];
+</script>
+<div class="shouye-conent">
+    <div class="shouye-conent-nav">
+        <input type="text" placeholder="开始时间" id="flatpickr-tryme" >
+        ---
+        <input type="text" placeholder="结束时间" id="flatpickr">
+        <button>搜索</button>
+    </div>
+    <div class="portlet-body">
+        <table>
+            <thead>
+            <tr>
+                <th>订单编号</th>
+                <th>订单日期</th>
+                <th>申请人</th>
+                <th>货款金额</th>
+                <th>审批利率</th>
+                <th>处理人</th>
+                <th>订单状态</th>
+            </tr>
+            </thead>
+            <tbody class="tabody">
+
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <ul class="pagination pagination1">
+                <div class="paginationspan" style="float: left">
+                    共<a href="" class="zg-jilu"></a>条记录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="dq-yeshu">1</a>/<a href="" class="zg-yeshu"></a>页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+                <div class="paginationAAA">
+                    到第 <input type="text" class="paginationA">    页
+                    <button class="btn">前往</button>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

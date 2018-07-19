@@ -1,0 +1,625 @@
+.STYLE2 {color: #FF3300}
+.showsubnews
+{
+	position:absolute;
+	 width:180px; background-color:#CCC;
+	margin-top:0px!important;margin-top:10px;
+	background-image:none;
+	border:1px solid #BCBCBC;
+	background-color:#F7F6F6;
+}
+.showsubnews ul,.showsubnews li
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	background-image:none;
+}
+.showsubnews ul li
+{ width:180px; 
+	background-image:none;
+	border-bottom:dotted 1px #E1E1E1;
+	}
+.lnav_c{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+.lnav_c dt
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:28px;
+	padding-left:35px;
+	background-image: url(/Templates/default/images/an-3.gif);
+	background-repeat: repeat-x;
+	line-height:28px;
+	color:#FFF;
+}
+.lnav_c dt a
+{
+	color:#FFF;
+}
+.lnav_c dt a.link
+{
+	color:#FFF;
+}
+.lnav_c dd,.lnav_c dl
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	padding-left:0px;
+	}
+.lnav_c dl
+{
+	cursor:pointer;
+	}
+.lnav_c ul
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	padding-left:0px;
+	}
+.lnav_c li
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:28px;
+	cursor:pointer;
+	padding-left:35px;
+	background-image: url(/Templates/default/images/an-4.gif);
+	background-repeat: repeat-x;
+	line-height:28px;
+}
+a:active {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+a:link {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px; color: #666666; text-decoration: none}
+a:visited {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+color: #666666;
+	text-decoration: none;
+	font-size: 12px;
+}
+a:hover {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+color: #007e41;
+	text-decoration: none;
+	font-size: 12px;
+}
+a.r1:link {
+	color: #007e41;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+	line-height: 140%;
+	font-weight: bold;
+}
+a.r1:visited {
+	color: #007e41;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+	line-height: 140%;
+	font-weight: bold;
+}
+a.r1:hover {
+	color: #009ee7;
+	font-family: "Microsoft Yahei";
+	font-size: 
+14px;
+	text-decoration: underline;
+	line-height: 140%;
+	font-weight: bold;
+
+}
+a.r1-new:link {
+	color: #007e41;
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	line-height: 140%;
+	font-weight: bold;
+}
+a.r1-new:visited {
+	color: #007e41;
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	line-height: 140%;
+	font-weight: bold;
+}
+a.r1-new:hover {
+	color: #009ee7;
+	font-family: "Microsoft Yahei";
+	font-size: 
+12px;
+	text-decoration: underline;
+	line-height: 140%;
+	font-weight: bold;
+
+}a.r1a:link {
+	color: #ffffff;
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	line-height: 140%;
+}
+a.r1a:visited {
+	color: #ffffff;
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	line-height: 140%;
+}
+a.r1a:hover {
+	color: #9de0ff;
+	font-family: "Microsoft Yahei";
+	font-size: 
+12px;
+	text-decoration: underline;
+	line-height: 140%;
+
+}a.r1-16:link {
+	color: #666666;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 16px;
+	line-height: 140%;
+}
+a.r1-16:visited {
+	color: #666666;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 16px;
+	line-height: 140%;
+}
+a.r1-16:hover {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 16px;
+	text-decoration: underline;
+	line-height: 140%;
+
+}
+a.r1c:link {
+	color: #666666;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 15px;
+	line-height: 140%;
+	font-weight: bold;
+}
+a.r1c:visited {
+	color: #666666;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 15px;
+	line-height: 140%;
+	font-weight: bold;
+}
+a.r1c:hover {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 15px;
+	text-decoration: underline;
+	line-height: 140%;
+	font-weight: bold;
+
+}a.myc-link-14:link {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	line-height: 140%;
+}
+a.myc-link-14:visited {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	line-height: 140%;
+}
+a.myc-link-14:hover {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 
+14px;
+	text-decoration: underline;
+	line-height: 140%;
+
+}
+a.r2:link {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	text-decoration: none;
+}
+a.r2:visited {
+	color: #007e41;
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	text-decoration: none;
+}
+a.r2:hover {  color: #009ee7; font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif"; font-size: 
+14px; text-decoration: underline}
+a.r2a:link {
+	color: #666666;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px;
+	text-decoration: none;
+}
+a.r2a:visited {
+	color: #666666;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px;
+	text-decoration: none;
+}
+a.r2a:hover {  color: #333333;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 
+14px; text-decoration: underline}
+
+a.r3:link {
+	color: #CC3300;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 16px;
+	line-height: 135%;
+	text-decoration: none;
+	font-weight: bold;
+
+
+}
+a.r3:visited {
+	color: #FF6600;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 16px;
+	line-height: 135%;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.r3:hover {
+	color: #007e41;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 
+16px;
+	text-decoration: underline;
+	line-height: 135%;
+	font-weight: bold;
+
+}
+a.r5:link {  color: #666666;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px}
+a.r5:visited {  color: #333333;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px}
+a.r5:hover {  color: #990000;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 
+12px; text-decoration: none}
+a.r6:link {
+	color: #FFFFFF;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px;
+	line-height: 130%;
+}
+a.r6:visited {
+	color: #666666;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px;
+	line-height: 130%;
+}
+a.r6:hover {
+	color: #FFFF00;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 
+14px;
+	text-decoration: none;
+	line-height: 130%;
+}
+a.r4:link {  color: #666666;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px; text-decoration: none; font-weight: normal}
+a.r4:visited {  color: #CC0000;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px; text-decoration: none; font-weight: normal}
+a.r4:hover {  color: #333333;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 
+14px; text-decoration: none; font-weight: normal}
+table {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	line-height: 150%;
+	color: #666666;
+
+
+}
+.zt10 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	line-height: 120%;
+	color: #ffffff;
+
+
+}.zt12 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	line-height: 120%;
+	color: #007e41;
+
+
+}.zt10a {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	line-height: 120%;
+	color: #007e41;
+
+
+}
+.bian {
+	border: 1px solid #ffffff;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px;
+	line-height: 168%;
+	color: #ffffff;
+
+}.myc-bian {
+	border: 1px solid #007e41;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px;
+	line-height: 168%;
+	color: #DFDFDF;
+
+}
+.zt18 {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 18px;
+	line-height: 120%;
+		font-weight: bold;
+	color:#007e41;
+	text-decoration: none;
+}
+.zt18a {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 22px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.zt16 {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 16px;
+	line-height: 180%;
+	color: #666666;
+
+}
+.bian2 {
+	border: 1px solid #dadada;
+}
+.pxj14 {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 14px;
+	line-height: 120%;
+	font-weight: bold;
+}
+.zt14 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	line-height: 160%;
+	color: #666666;
+
+}
+.myc-24 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 24px;
+	color: #007e41;
+	height:30px;
+	line-height:30px;
+}.myc-20 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 130%;
+}.myc-16 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	height:30px;
+	line-height:30px;
+}.myc-18 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 18px;
+	color: #007e41;
+	height:30px;
+	line-height:30px;
+}.myc-14 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	font-weight: bold;
+	color: #007e41;
+	height:30px;
+	line-height:30px;
+}.myc-14a {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	font-weight: bold;
+	color: #007e41;
+	height:30px;
+	line-height:30px;
+}
+.zt124 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF3300;
+	height:30px;
+	line-height:30px;
+}
+.zt20 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF3300;
+}
+.zt-bian {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.zt9 {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 10px;
+	line-height: 120%;
+	font-weight: normal;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.zt28 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 28px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	line-height: 150%;
+
+}.zt40 {
+	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+	font-size: 40px;
+	color: #007e41;
+	text-decoration: none;
+	line-height: 150%;
+
+}
+.zt14a {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 16px;
+	line-height: 135%;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.zt12b {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.kuan {	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 12px;
+	color: #666666;
+	maxlength: 70px;
+	background-color: #FFFFFF;
+	border: 1px #666666;
+
+
+}
+.kuan1 {
+	height: 30px;	font-family: "Microsoft Yahei","Arial", "Helvetica", "sans-serif";
+font-size: 20px;
+	color: #666666;
+	maxlength: 70px
+}
+input.s_input{border:0;border:2px inset #c0c0c0;height:30px;width:317px;font-size:20px;font-family:"Arial", "Helvetica", "sans-serif";padding:3px 4px 0 4px;color:#666666}
+input.b_input{border:0;border:2px inset #c0c0c0;height:30px;width:317px;font-size:20px;font-family:"Arial", "Helvetica", "sans-serif";padding:3px 4px 0 4px;color:#666666}
+.b1 {
+	border-bottom-style: 1;
+	border-bottom-color: #CCCCCC;
+	border-bottom-width: thin;
+
+}
+/*----------------------导航栏样式开始---------------------------*/
+.showsubmenu
+{
+	position:absolute;
+	margin:0px;
+	margin-top:0px!important;
+	margin-top:40px;
+	padding:0px;
+	width:110px;
+	border:1px solid #BCBCBC;
+	background-color:#F7F6F6;
+	}
+.showsubmenu a
+{
+	padding-left:5px;
+	float:left;
+	width:104px;
+	height:20px;
+	line-height:20px;
+	border-bottom:dotted 1px #E1E1E1;
+	}
+	
+#menu {
+	MARGIN-TOP: 1px; width:55px; width:750px; line-height:18px; text-align:center; height:18px; padding-left:130px;
+}
+
+#menu ul{
+	list-style-type:none; margin:0px; padding:0px;}
+#menu ul li{
+	margin:0px;
+	list-style-type:none;
+	display:inline;
+	}
+#menu ul li a{
+	color:#FFF;
+	font-weight:bold;
+	font-size:10pt;}
+#menu ul li a:hover{
+	text-decoration:underline;
+	
+	}
+	
+
+#navigation, #navigation li ul {
+	list-style-type:none;
+}
+
+#navigation {
+	padding-left:50px;
+	margin-top:8px;
+	height:
+}
+#navigation .nav_ {
+	float: left;
+	width: 180px;
+}
+.b{ font-weight:bold; font-size:15px;}
+#navigation li {
+	text-align:center;
+	float: left;
+	position: relative;
+}
+#navigation li a:link, #navigation li a:visited {
+	display:block; 
+	text-decoration:none; 
+	color:#FFFFFF; 
+	width:102px; 
+	height:20px; 
+	line-height:18px; 
+/*	background:#c5dbf2; */
+	font-size:12px;
+}
+#navigation li ul li a:link, #navigation li ul li a:visited {
+	display:block; 
+	text-decoration:none; 
+	color:#666; 
+	width:102px; 
+	height:20px; 
+	line-height:18px; 
+	font-size:12px;
+}
+#navigation li ul li a:link, #navigation li ul li a:visited {
+	background:#f9fbfa;
+	font-size:12px;
+	font-weight:normal;    
+	border-top:#bfc1c0 1px solid;
+}
+
+#navigation li ul li a:hover {
+	color:#fff;
+	background:#0989E2; 
+}
+#navigation li ul{
+	display:none;
+	position:absolute;
+	left:0px;
+	margin-top:-1px;
+	width:90px;	
+	border:#bfc1c0 1px solid;
+
+}
+#navigation li ul li
+{
+
+}
+#navigation li ul li ul {
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin-top:0;
+	margin-left:1px;
+	width:120px;
+}
+.clear{clear:both;}
+ ul, dl, dd, dt, ol, li,div {margin:0;padding:0;-webkit-text-size-adjust: none}
+/* 效果CSS开始 */
+.slider{display:none}/*用于获取更加体验*/
+.focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
+.focus span.current{background:#fff}
+/* 效果CSS结束 */
+/*----------------------导航栏样式结束---------------------------*/

@@ -1,0 +1,242 @@
+body,ul,li,a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+}
+.nav-box{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.nav-box img{
+    float: left;
+    margin-top: 18px;
+}
+.nav-box div{
+    height: 100%;
+    line-height: 100px;
+    float: right;
+}
+.nav-box span{
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+}
+.conent{
+    width: 100%;
+    height: 480px;
+    background: url("../image/banner.jpg");
+    background-size: 100% auto;
+}
+.conent-box{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.conent-from{
+    width: 280px;
+    background: #eff2f9;
+    float: right;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 22px 28px;
+    box-sizing: border-box;
+}
+.conent-from-nav{
+    width: 100%;
+    text-align: center;
+}
+.conent-from-nav a{
+    font-size: 15px;
+    padding: 3px 8px;
+    font-weight: bold;
+}
+.conent-from input{
+    width: 100%;
+    height: 34px;
+    margin-top: 14px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border: 1px solid #dbdbdb;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #88bafe;
+}
+.conent-forms{
+    position: relative;
+}
+.conent-forms i{
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 21px;left: 8px;
+}
+.conent-from button{
+    width: 100%;
+    height: 32px;
+    border: 0;
+    margin-top: 14px;
+    background: #2e83f6;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:focus{
+    outline: none;
+}
+.zhuce{
+    width: 100%;
+    margin-top: 8px;
+}
+.zhuce input{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    background: transparent;
+    border: 1px solid #b0b2b4;
+    position: absolute;
+    top:7px;
+}
+.zhuce-zidong{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    left: 15px;
+    top: 5px;
+    color: #333333;
+}
+.zhuce a{
+    font-size: 12px;
+}
+.zhuce span{
+    font-size: 12px;
+}
+.youce a{
+    color: #ff8b13;
+}
+.fenge{
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    margin-top: 48px;
+    position: relative;
+}
+.fenge div{
+    width: 80px;
+    background: #EFF2F9;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    left: 30%;
+    top: -9px;
+    text-align: center;
+    color: #999999;
+}
+.disan{
+    width: 100%;
+    padding: 18px 30px;
+}
+.disan div{
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 29px;
+}
+.weixin{
+    background: url("../image/weixin.png");
+}
+.weixin:hover{
+    background: url("../image/weixin1.png");
+}
+.qq{
+    background: url("../image/qq.png");
+}
+.qq:hover{
+    background: url("../image/qq1.png");
+}
+.xinlang{
+    background: url("../image/xinlang.png");
+}
+.xinlang:hover{
+    background: url("../image/xinlang1.png");
+}
+.foot{
+    width: 100%;
+    height: 294px;
+    background: #1d2f42;
+}
+.foot-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 69px;
+
+}
+.foot-box-top{
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    border-bottom: 1px solid #3a4959;
+}
+.foot-box-top a{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 24px;
+    color: #999999;
+    font-weight: bold;
+}
+.foot-box-botton{
+    width: 100%;
+    padding-top: 30px;
+}
+.foot-shangbiao{
+    width: 100%;
+    text-align: center;
+}
+.foot-span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    font-weight: bold;
+}
+.foot-shangbiao{
+    width: 100%;
+    text-align: center;
+}
+.foot-shangbiao div{
+    display: inline-block;
+    margin: 20px 10px;
+}
+.cuowu{
+    width: 100%;
+    height: 24px;
+    border: 1px solid #f85d00;
+    margin-top: 16px;
+    background: #fff6ec;
+    color: #f85d00;
+    font-size: 12px;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    position: relative;
+    display: none;
+}
+.cuowu i{
+    display: inline-block;
+    width: 15px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+.cuowu img{
+    width: 100%;
+}

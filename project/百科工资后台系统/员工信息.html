@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<script>
+    let data= [
+        {
+            "id": "1",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一',
+            'caozuo':'编辑'
+        }, {
+            "id": "2",
+            "name": "多少积分",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一',
+            'caozuo':'编辑'
+        },{
+            "id": "3",
+            "name": "sdds",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一',
+            'caozuo':'编辑'
+        },{
+            "id": "4",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "5",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "6",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "7",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "8",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "9",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "10",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "11",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "12",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "13",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一'
+            ,'caozuo':'编辑'
+        },{
+            "id": "14",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一'
+            ,'caozuo':'编辑'
+        },{
+            "id": "15",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        },{
+            "id": "16",
+            "name": "哇上级",
+            "telephone": "18354047846",
+            "products": "金融借贷一",
+            "bank": "6222020903006429367",
+            "idnumber": "231004198556880318",
+            "others1": "金融借贷一",
+            "others2": "金融借贷一",
+            "others3": '金融借贷一','caozuo':'编辑'
+        }
+    ];
+</script>
+<body>
+
+    <div class="shouye-conent">
+        <div class="shouye-conent-nav">
+            <span>姓名查询：</span>
+            <input type="text" placeholder="输入查询者姓名">
+            <button>搜索</button>
+        </div>
+        <div class="portlet-body">
+            <table>
+                <thead>
+                <tr>
+                    <th>员工序号</th>
+                    <th>姓名</th>
+                    <th>电话</th>
+                    <th>产品</th>
+                    <th>银行卡号</th>
+                    <th>身份证号</th>
+                    <th>其他1</th>
+                    <th>其他2</th>
+                    <th>其他3</th>
+                    <th style="width: 200px;">操作</th>
+                </tr>
+                </thead>
+                <tbody class="tabody">
+
+                </tbody>
+
+            </table>
+
+                <!--企业贷-->
+                <div class="tanchu-box tanchu-box-nei">
+                    <div class="tanchu-top">
+                        企业贷
+                        <img src="image/guanbi.png" class="tanchu-top-img" alt="">
+                    </div>
+                    <div class="tanchu-content">
+                        <form action="">
+                            <ul>
+                                <li>货款类型：企业贷</li>
+                                <li style="background: #f4f4f4">基础信息</li>
+                                <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;：黄西叨叨</li>
+                                <li>身&nbsp;份&nbsp;证&nbsp;：3541812345615741</li>
+                                <li>手&nbsp;机&nbsp;号&nbsp;：12354112571</li>
+                                <li style="background: #f4f4f4">征信信息</li>
+                                <li>是否结婚：是</li>
+                                <li>是否逾期：否</li>
+                                <li style="background: #f4f4f4">企业信息</li>
+                                <li><span style="display:inline-block;width:200px;margin-right: 200px; ">企&nbsp;&nbsp;业&nbsp;&nbsp;名&nbsp;&nbsp;称：百科融资</span><span>年&nbsp;&nbsp;营&nbsp;&nbsp;业&nbsp;&nbsp;额：xxx</span></li>
+                                <li><span style="display:inline-block;width:200px;margin-right: 200px; ">经&nbsp;&nbsp;营&nbsp;&nbsp;范&nbsp;&nbsp;围：全球</span>年 纳税 金 额：xxx</li>
+                                <li><span style="display:inline-block;width:200px;margin-right: 200px; ">法&nbsp;&nbsp;人&nbsp;&nbsp;信&nbsp;&nbsp;息：换手机</span>月均公开流水：xxx</li>
+                                <li><span style="display:inline-block;width:200px;margin-right: 200px; ">股&nbsp;&nbsp;份&nbsp;&nbsp;占&nbsp;&nbsp;比：20%</span>开&nbsp;&nbsp;票&nbsp;&nbsp;金&nbsp;&nbsp;额：xxx</li>
+                                <li><span style="display:inline-block;width:200px;margin-right: 200px; ">企业执照号码：128548</span>所&nbsp;&nbsp;&nbsp;&nbsp;属&nbsp;&nbsp;&nbsp;&nbsp;地&nbsp;&nbsp;：xxx</li>
+                                <li>备&nbsp;&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;：备注备注备注备注备注备注备注</li>
+                            </ul>
+                            <button class="button">确认提交</button>
+                        </form>
+                    </div>
+                </div>
+                <!--信用贷-->
+                <div class="tanchu-box tanchu-box-nei">
+                    <div class="tanchu-top">
+                        房贷
+                        <img src="image/guanbi.png" class="tanchu-top-img" alt="">
+                    </div>
+                    <div class="tanchu-content">
+                        <form action="">
+                            <ul>
+                                <li>货款类型：信用贷</li>
+                                <li style="background: #f4f4f4">基础信息</li>
+                                <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;：黄岛到</li>
+                                <li>身&nbsp;份&nbsp;证&nbsp;：1215456456542345</li>
+                                <li>手&nbsp;机&nbsp;号&nbsp;：123454678645</li>
+                                <li style="background: #f4f4f4">工作信息</li>
+                                <li>职&nbsp;&nbsp;&nbsp;&nbsp;位&nbsp;&nbsp;&nbsp;：上班</li>
+                                <li>打卡工资：15000元</li>
+                                <li>社保,公积：有</li>
+                                <li style="background: #f4f4f4">信用卡信息</li>
+                                <li>开户银行：xxxx</li>
+                                <li>卡&nbsp;&nbsp;&nbsp;&nbsp;号&nbsp;&nbsp;&nbsp;：xxxx</li>
+                                <li style="background: #f4f4f4">车辆信息</li>
+                                <li><span style="display: inline-block;width: 200px;margin-right: 200px">品&nbsp;&nbsp;&nbsp;&nbsp;牌&nbsp;&nbsp;&nbsp;：丰田</span>有无货款：是</li>
+                                <li><span style="display: inline-block;width: 200px;margin-right: 200px">登记日期：2017/2/3</span>车&nbsp;牌&nbsp;号&nbsp;：xxx</li>
+                                <li style="background: #f4f4f4">房产信息</li>
+                                <li><span style="display: inline-block;width: 200px;margin-right: 200px">房产位置：xxx</span>房&nbsp;&nbsp;&nbsp;&nbsp;龄&nbsp;&nbsp;&nbsp;：xxx</li>
+                                <li><span style="display: inline-block;width: 200px;margin-right: 200px">房产类型：xxx</span>有无货款：xxx</li>
+                                <li><span style="display: inline-block;width: 200px;margin-right: 200px">房产性质：xxx</span>面&nbsp;&nbsp;&nbsp;&nbsp;积&nbsp;&nbsp;&nbsp;：xxx</li>
+                                <li>备&nbsp;&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;：备注备注备注</li>
+                            </ul>
+                            <button class="button">确认提交</button>
+                        </form>
+
+                    </div>
+                </div>
+                <!--修改信息表单-->
+                <div class="tanchu-box tanchu-box-nei">
+                    <div class="tanchu-top">
+                        货款订单详情
+                        <img src="image/guanbi.png" class="tanchu-top-img" alt="">
+                    </div>
+                    <div class="tanchu-content">
+                        <form action="">
+                            <ul>
+                                <li style="margin-top: 30px">员工编号：<input class="bianjiinput" type="text" disabled="disabled" style="border: 0"></li>
+                                <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;：<input type="text"></li>
+                                <li>产&nbsp;&nbsp;&nbsp;&nbsp;品&nbsp;&nbsp;&nbsp;：<input type="text"></li>
+                                <li>银行卡号：<input type="text"></li>
+                                <li>身份证号：<input type="text"></li>
+                                <li>密&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;：<input type="password"></li>
+                                <li>其&nbsp;他&nbsp;1&nbsp;：<input type="password"></li>
+                                <li>其&nbsp;他&nbsp;2&nbsp;：<input type="password"></li>
+                                <li>其&nbsp;他&nbsp;3&nbsp;：<input type="password"></li>
+                            </ul>
+                            <button class="button" style="display:block;margin: 30px auto">保&nbsp;&nbsp;&nbsp;&nbsp;存</button>
+                        </form>
+
+
+                    </div>
+                </div>
+                <!--房贷-->
+                <div class="tanchu-box tanchu-box-nei">
+                    <div class="tanchu-top">
+                        房贷
+                        <img src="image/guanbi.png" class="tanchu-top-img" alt="">
+                    </div>
+                    <div class="tanchu-content">
+                        <form action="">
+                            <ul>
+                                <li>货款类型：房贷</li>
+                                <li style="background: #f4f4f4">基础信息</li>
+                                <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;：黄西叨叨</li>
+                                <li>身&nbsp;份&nbsp;证&nbsp;：34151264851478121</li>
+                                <li>手&nbsp;机&nbsp;号&nbsp;：13551254841</li>
+                                <li style="background: #f4f4f4">征信信息</li>
+                                <li>是否结婚：是</li>
+                                <li>是否逾期：否</li>
+                                <li style="background: #f4f4f4">房产信息</li>
+                                <li>房产位置：郊区</li>
+                                <li>房产类型：写字楼</li>
+                                <li>房产性质：商品</li>
+                                <li>有无货款：无</li>
+                                <li>面&nbsp;&nbsp;&nbsp;&nbsp;积&nbsp;&nbsp;&nbsp;：99平米</li>
+                                <li>备&nbsp;&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;：备注备注备注备注备注备注备注备注备注备注</li>
+                            </ul>
+                            <button class="button">确认提交</button>
+                        </form>
+
+
+                    </div>
+                </div>
+                <!--车贷-->
+                <div class="tanchu-box tanchu-box-nei">
+                    <div class="tanchu-top">
+                        车贷
+                        <img src="image/guanbi.png" class="tanchu-top-img" alt="">
+                    </div>
+                    <div class="tanchu-content">
+                        <form action="">
+                            <ul>
+                                <li>货款类型：车贷</li>
+                                <li style="background: #f4f4f4">基础信息</li>
+                                <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;：黄西叨叨</li>
+                                <li>身&nbsp;份&nbsp;证&nbsp;：3124511254879536</li>
+                                <li>手&nbsp;机&nbsp;号&nbsp;：12354812645</li>
+                                <li style="background: #f4f4f4">征信信息</li>
+                                <li>是否结婚：是</li>
+                                <li>是否逾期：无</li>
+                                <li style="background: #f4f4f4">车辆信息</li>
+                                <li>品&nbsp;&nbsp;&nbsp;&nbsp;牌&nbsp;&nbsp;&nbsp;：丰田</li>
+                                <li>登记日期：日期选择</li>
+                                <li>有货无款：无</li>
+                                <li>车&nbsp;牌&nbsp;号&nbsp;：哈A05453</li>
+                                <li>备&nbsp;&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;：备注备注备注备注备注备注备注备注备注备注</li>
+                            </ul>
+                            <button class="button">确认提交</button>
+                        </form>
+
+                    </div>
+                </div>
+                <!--其他贷-->
+                <div class="tanchu-box tanchu-box-nei">
+                    <div class="tanchu-top">
+                        车贷详情
+                        <img src="image/guanbi.png" class="tanchu-top-img" alt="">
+                    </div>
+                    <div class="tanchu-content">
+                        <form action="">
+                            <ul>
+                                <li>货款类型：车贷</li>
+                                <li style="background: #f4f4f4">基础信息</li>
+                                <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;：黄西叨叨</li>
+                                <li>身&nbsp;份&nbsp;证&nbsp;：3454564546321345645</li>
+                                <li>手&nbsp;机&nbsp;号&nbsp;：12374578645</li>
+                                <li style="background: #f4f4f4">征信信息</li>
+                                <li>是否结婚：是</li>
+                                <li>是否逾期：3月</li>
+                                <li style="background: #f4f4f4">保单信息</li>
+                                <li>保单公司：xxxx</li>
+                                <li>保&nbsp;单&nbsp;号&nbsp;：xxx</li>
+                                <li>备&nbsp;&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;：备注备注备注备注备注备注</li>
+                            </ul>
+                            <button class="button">确认提交</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            <div class="pagination">
+                <ul class="pagination pagination1">
+                    <div class="paginationspan" style="float: left">
+                        共<a href="" class="zg-jilu"></a>条记录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="dq-yeshu">1</a>/<a href="" class="zg-yeshu"></a>页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+                    <div class="paginationAAA">
+                        到第 <input type="text" class="paginationA">    页
+                        <button class="btn">前往</button>
+                    </div>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/index.js"></script>
+<script>
+    let tabodys=document.getElementsByClassName('tabody')[0];
+    let btns=document.getElementsByClassName('btn')[0];
+    let kuang=document.getElementsByClassName('kuang')[0];
+    let tanchubox=document.getElementsByClassName('tanchu-box');
+    let bianjiinput=document.getElementsByClassName('bianjiinput')[0];
+    let button=document.getElementsByClassName('button');
+    let tanchutopimg=document.getElementsByClassName('tanchu-top-img');
+    for(let i=0;i<tabodys.children.length;i++){
+        let a=document.createElement('a');
+        a.innerHTML='编辑';
+        a.style.background='#3eabe7';
+        a.style.margin=0;
+        a.style.cursor='pointer';
+        a.onclick=function () {
+            tanchubox[2].style.display='block';
+            bianjiinput.value=tabodys.children[i].children[0].innerHTML;
+            };
+
+        tabodys.children[i].children[9].innerHTML='';
+        tabodys.children[i].children[9].appendChild(a);
+    }
+    [...button].forEach(function (obj) {
+        obj.onclick=function () {
+            [...tanchubox].forEach(function (e) {
+                e.style.display='none';
+            })
+        }
+    });
+    [...tanchutopimg].forEach(function (obj) {
+        obj.onclick=function () {
+            [...tanchubox].forEach(function (e) {
+                e.style.display='none';
+            })
+        }
+    });
+    let paginationa=document.getElementsByClassName('pagination1')[0];
+    paginationa.addEventListener('click',function (e) {
+        if (e.target.tagName == 'A' || e.target.tagName == 'SPAN') {
+            for(let i=0;i<tabodys.children.length;i++){
+                let a=document.createElement('a');
+                a.innerHTML='编辑';
+                a.style.background='#3eabe7';
+                a.style.cursor='pointer';
+                a.style.margin=0;
+                tabodys.children[i].children[9].innerHTML='';
+                tabodys.children[i].children[9].appendChild(a);
+            }
+        }
+    });
+    btns.addEventListener('click',function (e) {
+            for(let i=0;i<tabodys.children.length;i++){
+                let a=document.createElement('a');
+                a.innerHTML='编辑';
+                a.style.background='#3eabe7';
+                a.style.margin=0;
+                tabodys.children[i].children[9].innerHTML='';
+                tabodys.children[i].children[9].appendChild(a);
+            }
+
+    });
+    window.onload=function () {
+        let tabody=document.getElementsByClassName('tabody')[0];
+
+        [...tabody.children].forEach(function (obj, index) {
+            obj.children[0].onclick=function(){
+                kuang.style.display='block';
+                if(条件房贷==1){
+                    tanchubox[3].style.display='block';
+                }else if(条件车贷==2){
+                    tanchubox[4].style.display='block';
+                }else if(条件信用贷==3){
+                    tanchubox[1].style.display='block';
+                }else if(条件企业贷==4){
+                    tanchubox[0].style.display='block';
+                }else if(条件其他贷==5){
+                    tanchubox[5].style.display='block';
+                }
+                kuang.appendChild(iframe);
+            }
+        },false)
+    }
+</script>
+
+</html>

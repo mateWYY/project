@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运动2</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="header">
+			<div class="log">
+				<img src="images/logo.png" alt="">
+			</div>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li class="hei"><a href="index2.html">ABOUTUS</a></li>
+				<li><a href="">MAN</a></li>
+				<li><a href=""> WOMAN</a></li>
+				<li><a href="">KID</a></li>
+				<li><a href="">FOLLOW US</a></li>
+			</ul>
+			<div class="elsh" onclick="btn()">
+				ENGLISH
+				<img src="images/esh_icn.png" alt="">
+				<div class="elsh_none">
+					<p>ENGLISH</p>
+					<p>中文</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="yun2_banner">
+		<img src="images/yun2_banner.jpg" alt="">
+	</div>
+	<div class="jies">
+		<div class="toutu">
+			<img src="images/touxiang.jpg" alt="">
+		</div>
+		<div class="jies_rig">
+			<img src="images/yun2_wen1.png" alt="">
+			<p>              李宁公司是中国家喻户晓的"体操王子"李宁先生在1990年创立的体育用品公司。经过二十多年的探索，李宁
+公司已逐步成为代表中国的、国际领先的运动品牌公司。从成立初期率先在全国建立特许专卖营销体系到持续多年
+赞助中国体育代表团参加国内外各种赛事；从成为国内第一家实施ERP的体育用品企业到不断进行品牌定位的调整
+，再到2004年6月在香港的上市，李宁公司经历了中国民族企业的发展与繁荣。</p>
+		</div>
+	</div>
+	<div class="yun2_cont">
+		<div class="yun2_top">
+			<img src="images/yun2_wen2.png" alt="">
+		</div>
+		<div class="yun2_bot">
+			<div class="bot_top">
+				<ul class="getul">
+					<li>2014 to date</li>
+					<li>2009 to 2013<li>
+					<li>2004 to 2008</li>
+					<li>1989 to 2003</li>
+				</ul>
+			</div>
+			<div class="bot_b">
+				<div class="shu">
+					<div class="shu_y shu_y1"></div>
+					<div class="shu_y sh"></div>
+					<div class="shu_y shu_y3"></div>
+					<div class="shu_y shu_y4"></div>
+				</div>
+				<div class="shu_cont shu_cont1">
+					<div class="scont_t scont_tr shu_le">
+						December 2017
+					</div>
+					<div class="cont_p">
+					<p>    Li Ning's 3+1 basketball league nationwide started, 
+becoming another Li Ning-owned IP tournament after 10K.</p>
+					</div>
+				</div>
+				<div class="shu_cont shu_cont2">
+					<div class="scont_t ">
+November 2016
+					</div>
+					<div class="cont_p">
+					<p>      During the "Double 11" period, the Li Ning Tmall flagship 
+store created a new record of 178 million yuan for single
+-store sales on a single day, while continuing to maintain 
+the first-best record of domestic sports industry flagship 
+store sales.</p>
+					</div>
+				</div>
+
+<div class="shu_cont shu_cont3">
+					<div class="scont_t shu_le">
+July 2015
+					</div>
+					<div class="cont_p">
+					<p>      Li Ning and Hua Mi Technology launched smart running shoes 
+to provide consumers with a variety of running experience 
+and opened up a new era in which the Li Ning brand entered 
+the “Internet + Sports Life Experience” field.</p>
+					</div>
+				</div>
+
+<div class="shu_cont shu_cont4">
+					<div class="scont_t shu_tr">
+March 23 to September 21, 2014					</div>
+					<div class="cont_p">
+					<p>        Li Ning China's 10-kilometer road league successfully 
+completed ten races in Shenzhen, Chongqing, Xi'an, Changsha, 
+Wuhan, Shanghai, Qingdao, Shenyang, Dalian and Beijing. Was
+ named the best road running league in the country by Runner 
+World.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="foot_box">
+		<div class="footer">
+			<div class="f_1">
+				<h3>Follow Us</h3>
+				<img src="images/T.png" alt="">
+			</div>
+			<div class="f_2">
+				<img src="images/fangda.jpg" alt="">
+			</div>
+			<div class="f_3">
+				<h2>Contact Us</h2>
+				<p>Address</p>
+				<p>New Street</p>
+				<p>ph :400-610-0011</p>
+			</div>
+		</div>
+		<div class="banhao">
+			My Lining© 2018 Allright Reserved
+		</div>
+	</div>
+</body>
+
+<script> 
+    var none=document.getElementsByClassName("elsh_none")[0];
+    function btn(){
+    	if(none.style.display=="block"){
+    		none.style.display="none";    	
+    	}else{
+    		none.style.display="block";
+    	}
+    }
+    var getul=document.getElementsByClassName("getul")[0];
+    getul.addEventListener("click",function(e){
+    	if(e.target.tagName=="LI"){
+    		Array.prototype.slice.call(getul.children).forEach(function(obj,ins){
+    			obj.style.background="#000";
+    		});
+    		var index=Array.prototype.slice.call(getul.children).indexOf(e.target);
+    		getul.children[index].style.background="#F26247";
+    	}
+    },false)
+
+</script>
+</html>

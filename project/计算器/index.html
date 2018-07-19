@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算机</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        background: #333;
+    }
+    .box{
+        width: 500px;
+        height: 400px;
+        background: #A9A9A9;
+        position: absolute;
+        top:0;left: 0;right: 0;bottom: 0;
+        margin:10% auto;
+        border-radius: 30px;
+        box-sizing: border-box;
+        padding: 25px;
+        border: 1px solid #fff;
+    }
+    .boxTop{
+        width: 100%;
+        height: 110px;
+        background: #111;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;overflow: hidden;
+    }
+    .boxDis{
+        width: 100%;
+        height: 50px;
+        background: #DEDEDE;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-family: yejing;
+        font-size: 42px;
+        text-align: right;
+        padding-right: 10px;
+        box-sizing: border-box;
+
+    }
+    @font-face {
+        font-family: yejing;
+        src: url("液晶数字字体.TTf");
+    }
+    .boxTop>h3{
+        margin: 0;
+        padding: 0;
+        color: #dedede;
+    }
+    .boxBot{
+        width: 100%;
+        margin-top: 10px;
+        height: 220px;
+        box-sizing: border-box;
+    }
+    table{
+        width: 100%;
+        height: 100%;
+        background: #A9A9A9;
+    }
+    tr{
+        width: 100%;
+        height: 38px;
+
+    }
+    td{
+        width: 50px ;
+        height: 40px;
+        background: #333;
+        color: #fff;
+        font-family: '微软雅黑';
+        text-align: center;
+        font-size: 24px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    window.onload=function(){
+        var sin=document.getElementById('sin');
+        var square=document.getElementById('square');
+        var add=document.getElementById('add');
+        var seven=document.getElementById('seven');
+        var eight=document.getElementById('eight');
+        var nine=document.getElementById('nine');
+        var remove=document.getElementById('remove');
+        var cos=document.getElementById('cos');
+        var cubic=document.getElementById('cubic');
+        var subtract=document.getElementById('subtract');
+        var four=document.getElementById('four');
+        var five=document.getElementById('five');
+        var six=document.getElementById('six');
+        var delet=document.getElementById('delet');
+        var tan=document.getElementById('tan');
+        var sqrt=document.getElementById('sqrt');
+        var take=document.getElementById('take');
+        var one=document.getElementById('one');
+        var two=document.getElementById('two');
+        var three=document.getElementById('three');
+        var equal=document.getElementById('equal');
+        var mod=document.getElementById('mod');
+        var log=document.getElementById('log');
+        var divide=document.getElementById('divide');
+        var zero=document.getElementById('zero');
+        var zzero=document.getElementById('zzero');
+        var point=document.getElementById('point');
+        var boxDis=document.getElementsByClassName('boxDis')[0];
+        var box=[];
+        var symbol;
+        var first;
+        var second=0;
+        var result;
+        function ad(value){
+            box.push(value.innerHTML);
+            if(box.join('').length<=12){
+                boxDis.innerHTML=box.join('');
+                first=box.join('')
+            }
+        }
+        one.onclick=function(){
+            ad(one);
+        };
+        two.onclick=function(){
+            ad(two);
+        };
+        three.onclick=function(){
+            ad(three);
+        };
+        four.onclick=function(){
+            ad(four);
+        };
+        five.onclick=function(){
+            ad(five);
+        };
+        six.onclick=function(){
+            ad(six);
+        };
+        seven.onclick=function(){
+            ad(seven);
+        };
+        eight.onclick=function(){
+            ad(eight);
+        };
+        nine.onclick=function(){
+            ad(nine);
+        };
+        zero.onclick=function(){
+            ad(zero);
+        };
+        zzero.onclick=function(){
+            ad(zzero);
+        };
+        point.onclick=function () {
+            ad(point);
+        };
+        add.onclick=function(){
+            result==0?result=parseFloat(second)+parseFloat(first):'';
+            second=result||first;
+            result=0;
+            symbol=1;
+            boxDis.innerHTML='';
+            box=[];
+        };
+        subtract.onclick=function(){
+            result==0?result=parseFloat(second)-parseFloat(first):'';
+            second=result||first;
+            result=0;
+            symbol=2;
+            boxDis.innerHTML='';
+            box=[];
+        };
+        take.onclick=function(){
+            result==0?result=parseFloat(second)*parseFloat(first):'';
+            second=result||first;
+            result=0;
+            symbol=3;
+            boxDis.innerHTML='';
+            box=[];
+        };
+        divide.onclick=function(){
+            result==0?result=parseFloat(second)/parseFloat(first):'';
+            second=result||first;
+            result=0;
+            symbol=4;
+            boxDis.innerHTML='';
+            box=[];
+        };
+        sin.onclick=function(){
+            var sins=Math.sin(first);
+            boxDis.innerHTML=parseFloat(sins.toPrecision(12));
+            box=[];
+        };
+        cos.onclick=function(){
+            var coss=Math.cos(first);
+            boxDis.innerHTML=parseFloat(coss.toPrecision(12));
+            box=[];
+        };
+        tan.onclick=function(){
+            var tans=Math.cos(first);
+            boxDis.innerHTML=parseFloat(tans.toPrecision(12));
+            box=[];
+        };
+        square.onclick=function(){
+            var squares=first*first;
+            boxDis.innerHTML=parseFloat(squares.toPrecision(12));
+            box=[];
+        };
+        cubic.onclick=function(){
+            var cubics=first*first*first;
+            boxDis.innerHTML=parseFloat(cubics.toPrecision(12));
+            box=[];
+        };
+        sqrt.onclick=function(){
+            var sqrts=Math.sqrt(first);
+            boxDis.innerHTML=parseFloat(sqrts.toPrecision(12));
+            box=[];
+        };
+        log.onclick=function(){
+            var logs=Math.log(first);
+            boxDis.innerHTML=parseFloat(logs.toPrecision(12));
+            box=[];
+        };
+        mod.onclick=function(){
+            var mods=first%2;
+            boxDis.innerHTML=parseFloat(mods.toPrecision(12));
+            box=[];
+        };
+        function results() {
+            if(symbol==1){
+                return result=parseFloat(second)+parseFloat(first);
+            }else if(symbol==2){
+                return result=parseFloat(second)-parseFloat(first);
+            }else if(symbol==3){
+                return result=parseFloat(second)*parseFloat(first)
+            }else if(symbol==4){
+                return result=parseFloat(second)/parseFloat(first)
+            }
+        }
+        equal.onclick=function(){
+            results();
+            boxDis.innerHTML=parseFloat(result.toPrecision(8));
+            box=[];
+        };
+        remove.onclick=function(){
+            boxDis.innerHTML='';
+            box=[];
+            first=0;
+            second=0;
+            result=0;
+
+        };
+        delet.onclick=function(){
+            box.pop();
+            first=box.join('');
+            boxDis.innerHTML=box.join('');
+        }
+    }
+</script>
+<body>
+    <div class="box">
+        <div class="boxTop">
+            <h3>CASIO</h3>
+            <div class="boxDis">
+
+            </div>
+        </div>
+        <div class="boxBot">
+            <table>
+                <tr>
+                    <td id="sin">sin</td>
+                    <td id="square">x²</td>
+                    <td id="add">+</td>
+                    <td id="seven">7</td>
+                    <td id="eight">8</td>
+                    <td id="nine">9</td>
+                    <td id="remove">c</td>
+                </tr>
+                <tr>
+                    <td id="cos">cos</td>
+                    <td id="cubic">x³</td>
+                    <td id="subtract">-</td>
+                    <td id="four">4</td>
+                    <td id="five">5</td>
+                    <td id="six">6</td>
+                    <td id="delet">←</td>
+                </tr>
+                <tr>
+                    <td id="tan">tan</td>
+                    <td id="sqrt">√</td>
+                    <td id="take">&times;</td>
+                    <td id="one">1</td>
+                    <td id="two">2</td>
+                    <td id="three">3</td>
+                    <td rowspan="2" id="equal">=</td>
+                </tr>
+                <tr>
+                    <td id="mod">%</td>
+                    <td id="log">log</td>
+                    <td id="divide">&divide;</td>
+                    <td id="zero">0</td>
+                    <td id="zzero">00</td>
+                    <td id="point">.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

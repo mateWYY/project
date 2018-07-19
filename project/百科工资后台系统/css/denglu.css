@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.denglu-banner{
+    width: 100%;
+    height: 670px;
+    background: url("../image/denglu-banner.png");
+    background-size: 110% auto;
+    background-position: center center;
+    position: relative;
+}
+.denglu-box{
+    width: 300px;
+    height: 245px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.denglu-top{
+    width: 100%;
+    height: 68px;
+    background: url("../image/logo.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.denglu-conent{
+    width: 100%;
+    height: 200px;
+    background: url("../image/denglu-beij.png");
+    background-size: 100% auto;
+}
+.denglu-conent-top{
+    width: 98%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(#ca5d65,#c14b49);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    text-shadow: 0 1px 2px #000;
+    font-weight: bold;
+    color: #fff;
+}
+.denglu-conent-input-box{
+    width: 200px;
+    margin: 15px auto;
+    position: relative;
+}
+.denglu-conent-input-box input{
+    width: 100%;
+    height: 30px;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.denglu-conent-input button{
+    margin: -5px auto 0;
+    background: #c14a48;
+    border: 0;
+    width: 80px;
+    height: 25px;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #c14a48;
+    font-size: 12px;
+    color: #fff;
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+.denglu-conent-input-boxI{
+    width: 30px;
+    height: 30px;
+    background: url("../image/lock.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #cccccc;
+    background-size: 50% auto;
+    background-position: 8px 6px;
+}
+.denglu-conent-input-boxi{
+    width: 30px;
+    height: 30px;
+    background: url("../image/lock.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #cccccc;
+    background-size: 50% auto;
+    background-position: 8px -50px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息编辑</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/xinxibianji.css">
+</head>
+<style>
+    input:focus{
+        outline: none;
+    }
+</style>
+<body>
+
+<div class="shouye-conent">
+    <div class="xinxib-top"></div>
+    <div class="xinxib-conent">
+        <div>编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：001254532</div>
+        <div>权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限：显示</div>
+        <div>卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<input type="text" value="6222020903006587444" class="input1" style="border: 0;color: #6F6F6F"> <button class="btn1">修改信息</button></div>
+        <div>身份证号：<input style="border: 0;color: #6F6F6F" type="text"  class="input2" value="231004198548742454"> <button class="btn2">修改信息</button></div>
+    </div>
+    <button class="xinxib-btn">保&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存</button>
+</div>
+
+</body>
+<script src="js/index.js"></script>
+<script>
+    let btn1=document.getElementsByClassName('btn1')[0];
+    let btn2=document.getElementsByClassName('btn2')[0];
+    let input1=document.getElementsByClassName('input1')[0];
+    let input2=document.getElementsByClassName('input2')[0];
+    btn1.onclick=function () {
+        input1.focus();
+    };
+    btn2.onclick=function () {
+        input2.focus();
+    }
+</script>
+</html>
